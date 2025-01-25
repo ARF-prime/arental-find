@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A'Rental Find - Find Your Perfect Rental Home in Uganda</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="hero">
+        <h1>Welcome to A'Rental Find</h1>
+        <p>Your gateway to affordable rentals in Uganda</p>
+        <input type="text" id="search-bar" placeholder="Search for properties...">
+        <button type="button">Search</button>
+    </section>
+</main>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find Your Perfect Rental Home in Uganda</h2>
+        <form class="search-form">
+            <input type="text" placeholder="Enter Location" name="location">
+            <input type="text" placeholder="Enter Budget" name="budget">
+            <input type="text" placeholder="House Type (e.g. Apartment)" name="house-type">
+            <button type="submit">Search Rentals</button>
+        </form>
+    </section>
+
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h3>How It Works</h3>
+        <div class="steps">
+            <div class="step">
+                <h4>Search</h4>
+                <p>Find the best rental homes that match your needs.</p>
+            </div>
+            <div class="step">
+                <h4>Browse</h4>
+                <p>View property details and images to make your decision easier.</p>
+            </div>
+            <div class="step">
+                <h4>Contact</h4>
+                <p>Directly reach out to landlords to secure your rental.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="search">
+    <h3>Search Rentals</h3>
+    <form id="searchForm">
+        <input type="text" id="locationSearch" placeholder="Search by location..." />
+        <input type="number" id="priceSearch" placeholder="Max Price (UGX)" />
+        <button type="submit">Search</button>
+    </form>
+</section>
+<!-- Featured Rentals Section -->
+    <section class="featured-rentals">
+    <h2>Featured Rentals</h2>
+    <div class="rentals-container">
+        <!-- Property 1 -->
+        <a href="property-details1.html" class="rental">
+            <img src="https://via.placeholder.com/300x200" alt="2-Bedroom Apartment in Kampala">
+            <div class="rental-info">
+                <p><strong>Location:</strong> Kampala</p>
+                <p><strong>Price:</strong> UGX 500,000/month</p>
+                <p><strong>Description:</strong> 2-bedroom apartment, fully tiled, spacious kitchen.</p>
+            </div>
+        </a>
+
+        <!-- Property 2 -->
+        <a href="property-details2.html" class="rental">
+            <img src="https://via.placeholder.com/300x200" alt="3-Bedroom House in Entebbe">
+            <div class="rental-info">
+                <p><strong>Location:</strong> Entebbe</p>
+                <p><strong>Price:</strong> UGX 600,000/month</p>
+                <p><strong>Description:</strong> 3-bedroom house with a large backyard.</p>
+            </div>
+        </a>
+
+        <!-- Property 3 -->
+        <a href="property-details3.html" class="rental">
+            <img src="https://via.placeholder.com/300x200" alt="Studio Apartment in Jinja">
+            <div class="rental-info">
+                <p><strong>Location:</strong> Jinja</p>
+                <p><strong>Price:</strong> UGX 350,000/month</p>
+                <p><strong>Description:</strong> Studio apartment in the city center.</p>
+            </div>
+        </a>
+
+        <!-- Property 4 -->
+        <a href="property-details4.html" class="rental">
+            <img src="https://via.placeholder.com/300x200" alt="2-Bedroom Apartment in Mbarara">
+            <div class="rental-info">
+                <p><strong>Location:</strong> Mbarara</p>
+                <p><strong>Price:</strong> UGX 450,000/month</p>
+                <p><strong>Description:</strong> 2-bedroom apartment in a quiet neighborhood.</p>
+            </div>
+        </a>
+
+        <!-- Property 5 -->
+        <a href="property-details5.html" class="rental">
+            <img src="https://via.placeholder.com/300x200" alt="4-Bedroom House in Mukono">
+            <div class="rental-info">
+                <p><strong>Location:</strong> Mukono</p>
+                <p><strong>Price:</strong> UGX 750,000/month</p>
+                <p><strong>Description:</strong> Spacious 4-bedroom house with a garden and large living space.</p>
+            </div>
+        </a>
+
+        <!-- Property 6 -->
+        <a href="property-details6.html" class="rental">
+            <img src="https://via.placeholder.com/300x200" alt="1-Bedroom Apartment in Mbale">
+            <div class="rental-info">
+                <p><strong>Location:</strong> Mbale</p>
+                <p><strong>Price:</strong> UGX 350,000/month</p>
+                <p><strong>Description:</strong> Affordable 1-bedroom apartment with great amenities.</p>
+            </div>
+        </a>
+    </div>
+</section>
+<a href="payment.html">Payment</a>
+
+
+
+
+
+    <section class="contact">
+    <h3>Contact Us</h3>
+    <form action="mailto:your-abrahamisaacwamla@gmail.com" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<!-- Meet the Founder Section -->
+    <section class="founder">
+    <h3>Meet the Founder</h3>
+    <p>Hello, I'm Abraham Isaac Wamala, the founder of A'Rental Find. I created this platform to make finding a rental home in Uganda simple, affordable, and transparent. My goal is to connect renters with quality housing options while ensuring landlords can showcase their properties with ease.</p>
+    <img src="https://via.placeholder.com/200x200" alt="Founder Image" class="founder-image">
+</section>
+
+    
+
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Affordable rental options for all budgets.</li>
+            <li>Direct access to landlords with no middlemen.</li>
+            <li>Wide range of rental homes to suit your needs.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+    <p>&copy; 2025 A'Rental Find</p>
+</footer>
+
+
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const location = document.getElementById('locationSearch').value.toLowerCase();
+        const price = parseInt(document.getElementById('priceSearch').value);
+
+        const rentals = document.querySelectorAll('.rental');
+        
+        rentals.forEach(rental => {
+            const rentalLocation = rental.querySelector('p').textContent.toLowerCase();
+            const rentalPrice = parseInt(rental.querySelectorAll('p')[1].textContent.replace('UGX ', '').replace('/month', '').replace(',', ''));
+
+            if ((location === '' || rentalLocation.includes(location)) && (isNaN(price) || rentalPrice <= price)) {
+                rental.style.display = 'block';
+            } else {
+                rental.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</body>
+</html>

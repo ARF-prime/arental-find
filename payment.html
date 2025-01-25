@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Instructions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this links to your CSS file -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav style="background-color: #333; padding: 1rem;">
+        <ul style="list-style: none; display: flex; justify-content: center; gap: 1rem; margin: 0; padding: 0;">
+            <li><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+            <li><a href="payment.html" style="color: #fff; text-decoration: none;">Payment</a></li>
+            <li><a href="#contact" style="color: #fff; text-decoration: none;">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Payment Instructions Section -->
+    <section id="payment" style="padding: 2rem; background-color: #f9f9f9;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">How to Make a Payment</h2>
+            <p>To access premium features or listings, follow these simple steps:</p>
+            <ol>
+                <li>Dial <strong>*165#</strong> for MTN or <strong>*185#</strong> for Airtel on your phone.</li>
+                <li>Select <strong>"Send Money"</strong>.</li>
+                <li>Enter the following phone number:
+                    <ul>
+                        <li><strong>MTN: 0786422819</strong></li>
+                        <li><strong>Airtel: Coming Soon</strong></li>
+                    </ul>
+                </li>
+                <li>Enter the amount: <strong>UGX 10,000</strong> (or as indicated).</li>
+                <li>Complete the payment by accepting the transaction on your phone.</li>
+            </ol>
+            <p>After you submit your details, you will be redirected to your phone to confirm and complete the payment.</p>
+        </div>
+
+        <!-- Payment Confirmation Form -->
+        <div class="container" style="max-width: 600px; margin: auto; margin-top: 2rem;">
+            <form action="javascript:void(0);" method="POST" onsubmit="redirectToPayment()" style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <h3 style="text-align: center;">Payment Confirmation Form</h3>
+                <label for="name">Your Full Name</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;">
+                
+                <label for="phone">Phone Number Used for Payment</label>
+                <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;">
+                
+                <label for="amount">Amount to Pay (UGX)</label>
+                <input type="number" id="amount" name="amount" required style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;">
+
+                <button type="submit" style="width: 100%; padding: 0.7rem; background-color: #007bff; color: #fff; border: none; border-radius: 4px; margin-top: 1rem;">
+                    Confirm Payment
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Function to redirect to Mobile Money USSD code based on the details entered
+        function redirectToPayment() {
+            var phoneNumber = document.getElementById('phone').value;
+            var amount = document.getElementById('amount').value;
+
+            if (!phoneNumber || !amount) {
+                alert("Please enter all details.");
+                return;
+            }
+
+            // Depending on the selected mobile provider, we open the respective USSD code
+            var ussdCode = "*165#"; // Default USSD for MTN, replace if Airtel is selected
+            var formattedAmount = "UGX " + amount;
+
+            // Redirect user to mobile money USSD code
+            alert("You will now be redirected to your phone to complete the payment.");
+            window.location.href = "tel://" + ussdCode; // This will open the USSD dialer
+        }
+    </script>
+</body>
+</html>

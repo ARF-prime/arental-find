@@ -42,6 +42,22 @@
             <button type="submit">Search Rentals</button>
         </form>
     </section>
+<!-- Rental Listings Section -->
+<section id="rental-listings">
+    <h2>Available Rentals</h2>
+    <div class="listing">
+        <h3>2-Bedroom Apartment</h3>
+        <p>Location: Kampala | Rent: UGX 700,000/month</p>
+        <button class="find-out-more" data-rental="2-Bedroom Apartment">Find out more</button>
+    </div>
+
+    <div class="listing">
+        <h3>3-Bedroom House</h3>
+        <p>Location: Entebbe | Rent: UGX 1,200,000/month</p>
+        <button class="find-out-more" data-rental="3-Bedroom House">Find out more</button>
+    </div>
+</section>
+
 
 
 
@@ -73,71 +89,78 @@
     </form>
 </section>
 <!-- Featured Rentals Section -->
-    <section class="featured-rentals">
+    <!-- Featured Rentals Section -->
+<section id="featured-rentals">
     <h2>Featured Rentals</h2>
-    <div class="rentals-container">
-        <!-- Property 1 -->
-        <a href="property-details1.html" class="rental">
-            <img src="https://via.placeholder.com/300x200" alt="2-Bedroom Apartment in Kampala">
-            <div class="rental-info">
-                <p><strong>Location:</strong> Kampala</p>
-                <p><strong>Price:</strong> UGX 500,000/month</p>
-                <p><strong>Description:</strong> 2-bedroom apartment, fully tiled, spacious kitchen.</p>
+    <div class="listings-container">
+        <!-- Rental 1 -->
+        <div class="listing-card">
+            <img src="images/house1.jpg" alt="2-Bedroom Apartment">
+            <div class="listing-details">
+                <h3>2-Bedroom Apartment</h3>
+                <p>Location: Kampala</p>
+                <p>Rent: UGX 700,000/month</p>
+                <button class="find-out-more" data-rental="2-Bedroom Apartment">Find out more</button>
             </div>
-        </a>
+        </div>
 
-        <!-- Property 2 -->
-        <a href="property-details2.html" class="rental">
-            <img src="https://via.placeholder.com/300x200" alt="3-Bedroom House in Entebbe">
-            <div class="rental-info">
-                <p><strong>Location:</strong> Entebbe</p>
-                <p><strong>Price:</strong> UGX 600,000/month</p>
-                <p><strong>Description:</strong> 3-bedroom house with a large backyard.</p>
+        <!-- Rental 2 -->
+        <div class="listing-card">
+            <img src="images/house2.jpg" alt="3-Bedroom House">
+            <div class="listing-details">
+                <h3>3-Bedroom House</h3>
+                <p>Location: Entebbe</p>
+                <p>Rent: UGX 1,200,000/month</p>
+                <button class="find-out-more" data-rental="3-Bedroom House">Find out more</button>
             </div>
-        </a>
+        </div>
 
-        <!-- Property 3 -->
-        <a href="property-details3.html" class="rental">
-            <img src="https://via.placeholder.com/300x200" alt="Studio Apartment in Jinja">
-            <div class="rental-info">
-                <p><strong>Location:</strong> Jinja</p>
-                <p><strong>Price:</strong> UGX 350,000/month</p>
-                <p><strong>Description:</strong> Studio apartment in the city center.</p>
+        <!-- Rental 3 -->
+        <div class="listing-card">
+            <img src="images/house3.jpg" alt="Studio Apartment">
+            <div class="listing-details">
+                <h3>Studio Apartment</h3>
+                <p>Location: Jinja</p>
+                <p>Rent: UGX 300,000/month</p>
+                <button class="find-out-more" data-rental="Studio Apartment">Find out more</button>
             </div>
-        </a>
+        </div>
 
-        <!-- Property 4 -->
-        <a href="property-details4.html" class="rental">
-            <img src="https://via.placeholder.com/300x200" alt="2-Bedroom Apartment in Mbarara">
-            <div class="rental-info">
-                <p><strong>Location:</strong> Mbarara</p>
-                <p><strong>Price:</strong> UGX 450,000/month</p>
-                <p><strong>Description:</strong> 2-bedroom apartment in a quiet neighborhood.</p>
+        <!-- Rental 4 -->
+        <div class="listing-card">
+            <img src="images/house4.jpg" alt="1-Bedroom Apartment">
+            <div class="listing-details">
+                <h3>1-Bedroom Apartment</h3>
+                <p>Location: Wakiso</p>
+                <p>Rent: UGX 500,000/month</p>
+                <button class="find-out-more" data-rental="1-Bedroom Apartment">Find out more</button>
             </div>
-        </a>
+        </div>
 
-        <!-- Property 5 -->
-        <a href="property-details5.html" class="rental">
-            <img src="https://via.placeholder.com/300x200" alt="4-Bedroom House in Mukono">
-            <div class="rental-info">
-                <p><strong>Location:</strong> Mukono</p>
-                <p><strong>Price:</strong> UGX 750,000/month</p>
-                <p><strong>Description:</strong> Spacious 4-bedroom house with a garden and large living space.</p>
+        <!-- Rental 5 -->
+        <div class="listing-card">
+            <img src="images/house5.jpg" alt="Luxury Villa">
+            <div class="listing-details">
+                <h3>Luxury Villa</h3>
+                <p>Location: Muyenga</p>
+                <p>Rent: UGX 4,500,000/month</p>
+                <button class="find-out-more" data-rental="Luxury Villa">Find out more</button>
             </div>
-        </a>
+        </div>
 
-        <!-- Property 6 -->
-        <a href="property-details6.html" class="rental">
-            <img src="https://via.placeholder.com/300x200" alt="1-Bedroom Apartment in Mbale">
-            <div class="rental-info">
-                <p><strong>Location:</strong> Mbale</p>
-                <p><strong>Price:</strong> UGX 350,000/month</p>
-                <p><strong>Description:</strong> Affordable 1-bedroom apartment with great amenities.</p>
+        <!-- Rental 6 -->
+        <div class="listing-card">
+            <img src="images/house6.jpg" alt="Single Room">
+            <div class="listing-details">
+                <h3>Single Room</h3>
+                <p>Location: Ntinda</p>
+                <p>Rent: UGX 150,000/month</p>
+                <button class="find-out-more" data-rental="Single Room">Find out more</button>
             </div>
-        </a>
+        </div>
     </div>
 </section>
-<a href="payment.html">Payment</a>
+
 
 
 
@@ -207,6 +230,38 @@
         });
     });
 </script>
+<!-- Hidden Payment Section -->
+<div id="payment-section" style="display: none;">
+    <h2>Website Fee Payment</h2>
+    <p id="rental-details"></p>
+    <p><strong>Fee:</strong> UGX 1,500</p>
+    <p>To view more details about this rental, please send UGX 1,500 to:</p>
+    <ul>
+        <li>MTN Mobile Money: <strong>0786422819</strong></li>
+    </ul>
+    <p>After payment, <a href="payment.html">confirm your payment here</a>.</p>
+</div>
+<script>
+    // Select all "Find out more" buttons
+    const findOutMoreButtons = document.querySelectorAll('.find-out-more');
+    const paymentSection = document.getElementById('payment-section');
+    const rentalDetails = document.getElementById('rental-details');
+
+    // Add event listeners to each button
+    findOutMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Get the rental name from the button's data attribute
+            const rentalInfo = button.getAttribute('data-rental');
+            
+            // Update the payment section with the selected rental's details
+            rentalDetails.textContent = `You selected: ${rentalInfo}`;
+            
+            // Show the payment section
+            paymentSection.style.display = 'block';
+        });
+    });
+</script>
+
 </body>
 </body>
 </html>

@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rentals - A'Rental Find</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Rentals - A'Rental Find</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rentals.html" class="active">Rentals</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="hero hero-small">
+    <div class="container">
+      <h1>Available Rentals</h1>
+      <p>Explore a wide range of affordable rentals in Uganda, tailored to your needs.</p>
+    </div>
+  </header>
 
-    <!-- Rentals Section -->
-    <main>
-        <section id="rentals">
-            <h1>Available Rentals</h1>
-            <div class="listings-container">
-                <!-- Rental 1 -->
-                <div class="listing-card">
-                    <img src="images/house1.jpg" alt="2-Bedroom Apartment">
-                    <div class="listing-details">
-                        <h3>2-Bedroom Apartment</h3>
-                        <p>Location: Kampala</p>
-                        <p>Rent: UGX 700,000/month</p>
-                        <a href="payment.html" class="find-out-more">Find out more</a>
-                    </div>
-                </div>
-                <!-- Rental 2 -->
-                <div class="listing-card">
-                    <img src="images/house2.jpg" alt="3-Bedroom House">
-                    <div class="listing-details">
-                        <h3>3-Bedroom House</h3>
-                        <p>Location: Entebbe</p>
-                        <p>Rent: UGX 1,200,000/month</p>
-                        <a href="payment.html" class="find-out-more">Find out more</a>
-                    </div>
-                </div>
-                <!-- Rental 3 -->
-                <div class="listing-card">
-                    <img src="images/house3.jpg" alt="Studio Apartment">
-                    <div class="listing-details">
-                        <h3>Studio Apartment</h3>
-                        <p>Location: Jinja</p>
-                        <p>Rent: UGX 450,000/month</p>
-                        <a href="payment.html" class="find-out-more">Find out more</a>
-                    </div>
-                </div>
-                <!-- Rental 4 -->
-                <div class="listing-card">
-                    <img src="images/house4.jpg" alt="1-Bedroom Apartment">
-                    <div class="listing-details">
-                        <h3>1-Bedroom Apartment</h3>
-                        <p>Location: Mbarara</p>
-                        <p>Rent: UGX 500,000/month</p>
-                        <a href="payment.html" class="find-out-more">Find out more</a>
-                    </div>
-                </div>
-                <!-- Rental 5 -->
-                <div class="listing-card">
-                    <img src="images/house5.jpg" alt="4-Bedroom Mansion">
-                    <div class="listing-details">
-                        <h3>4-Bedroom Mansion</h3>
-                        <p>Location: Wakiso</p>
-                        <p>Rent: UGX 2,500,000/month</p>
-                        <a href="payment.html" class="find-out-more">Find out more</a>
-                    </div>
-                </div>
-                <!-- Rental 6 -->
-                <div class="listing-card">
-                    <img src="images/house6.jpg" alt="2-Bedroom Townhouse">
-                    <div class="listing-details">
-                        <h3>2-Bedroom Townhouse</h3>
-                        <p>Location: Fort Portal</p>
-                        <p>Rent: UGX 900,000/month</p>
-                        <a href="payment.html" class="find-out-more">Find out more</a>
-                    </div>
-                </div>
+  <main>
+    <section class="filters">
+      <div class="container">
+        <h2>Filter Rentals</h2>
+        <form id="filterForm">
+          <div class="filter-group">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+              <option value="all">All Locations</option>
+              <option value="Kampala">Kampala</option>
+              <option value="Entebbe">Entebbe</option>
+              <option value="Wakiso">Wakiso</option>
+              <option value="Jinja">Jinja</option>
+              <option value="Mukono">Mukono</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="priceRange">Price Range (UGX):</label>
+            <select id="priceRange" name="priceRange">
+              <option value="all">All Prices</option>
+              <option value="0-500000">Up to 500,000</option>
+              <option value="500001-1000000">500,001 - 1,000,000</option>
+              <option value="1000001-2000000">1,000,001 - 2,000,000</option>
+              <option value="2000001+">Above 2,000,000</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <select id="bedrooms" name="bedrooms">
+              <option value="all">All</option>
+              <option value="1">1 Bedroom</option>
+              <option value="2">2 Bedrooms</option>
+              <option value="3">3 Bedrooms</option>
+              <option value="4+">4+ Bedrooms</option>
+            </select>
+          </div>
+          <button type="button" id="filterButton">Apply Filters</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="rentals">
+      <div class="container">
+        <h2>Featured Rentals</h2>
+        <div class="rental-grid" id="rentalGrid">
+          <!-- Rental listings go here -->
+          <div class="rental-card" data-location="Kampala" data-price="800000" data-bedrooms="2">
+            <img src="images/rental1.jpg" alt="Rental 1">
+            <div class="rental-details">
+              <h3>Spacious 2-Bedroom Apartment</h3>
+              <p><strong>Location:</strong> Kampala</p>
+              <p><strong>Rent:</strong> UGX 800,000/month</p>
+              <a href="rental-details.html" class="details-button">Find Out More</a>
             </div>
-        </section>
-    </main>
+          </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 A'Rental Find. All rights reserved.</p>
-    </footer>
+          <!-- Repeat similar rental cards for other rentals -->
+          <!-- Make sure each card has proper data attributes like data-location, data-price, and data-bedrooms -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 A'Rental Find. All Rights Reserved. | <a href="about.html">Learn More</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
